@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+}
+body{
+background: #222;
+    color: #fff;
+}
+
+.container{
+
+   display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
+}
+#btn1{
+    background-color:crimson ;
+    cursor: pointer;
+}
+#btn2{
+    background-color: crimson;
+    cursor: pointer;
+}
+#regPass,#loginPass,#loginUser,#regUser{
+    display: none;
+    background-color: darkgrey;
+    color: black;
+}
+
+#btn3, #btn4, #btn5,#btn6{
+    cursor: pointer;
+    display: none;
+    background-color: darkgrey;
+}
+
+#myTable{
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    display: none;
+    text-align: center;
+    background-color:#000;
+    border-collapse: collapse;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+}
+#myTable th{
+    background-color:#d32f2f;
+    color:#ffffff;
+    padding: 12px;
+    text-transform: uppercase;
+}
+#myTable td{
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+#myTable tr:hover {
+    background-color:dimgrey;
+}
+#myTable button {
+    background-color: #1976d2 ;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+@media screen and (max-width: 600px) {
+    #myTable, #myTable thead, #myTable tbody, #myTable th, #myTable td, #myTable tr {
+        display: block;
+    }
+
+    #myTable button:hover {
+        background-color: #0d47a1;
+    }
+
+    #myTable tr {
+        margin-bottom: 15px;
+        border-bottom: 2px solid #ddd;
+    }
+
+    #myTable td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+ #myTable td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 15px;
+    width: 45%;
+    padding-left: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+
+    .dataTables_length {
+        display: none;
+    }
+
+    .dataTables_paginate {
+        display: none;
+        background-color: crimson;
+        color: white !important;
+        padding: 5px 10px;
+        margin: 2px;
+        border-radius: 3px;
+        text-decoration: none;
+    }
+
+    .dataTables_filter {
+        display: none;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    th.sorting, th.sorting_asc, th.sorting_desc {
+        pointer-events: none;
+        display: none;
+    }
+
+    .dataTables_info {
+        display: none !important;
+    }
+}

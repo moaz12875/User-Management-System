@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.8/css/jquery.dataTables.min.css">
+
+    <link rel="stylesheet" href=css.css>
+</head>
+<body>
+ <div class="container">
+
+     <button id="btn2">Register</button>
+     <input  type="text"  id="regUser" placeholder="Enter Username">
+     <input  type="password"  id="regPass" placeholder="Enter Password">
+     <button id="btn3">Confirm</button>
+     <button id="btn4">Delete</button>
+     <button id="btn1">Login</button>
+     <input type="text"  id="loginUser" placeholder="Username">
+     <input type="password"  id="loginPass" placeholder="Password">
+     <button id="btn5">Confirm</button>
+     <button id="btn6">Delete</button>
+     <div id="deleteAll"></div>
+     <table id="myTable">
+         <thead>
+         <tr>
+             <th> id</th>
+             <th>Username</th>
+             <th>Password</th>
+             <th>Actions</th>
+         </tr>
+         </thead>
+         <tbody id="tbody">
+
+         </tbody>
+     </table>
+ </div>
+<script src ="script.js"></script>
+
+</body>
+</html>
+
